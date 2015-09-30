@@ -85,7 +85,7 @@
 \begingroup
 \setlength{\columnsep}{1cm}	
 \begin{multicols}{2}
-The performance of superconducting qubits has improved by several orders of magnitude in the past decade. The most successful and prominent studies\cite{bishop2009} in this field are all about circuit Quantum Electrodynamics (cQED) or so-called ``quantum optics on a chip''. In this work we've been trying to test if our sample was robust enough to reproduce quantitatively famous effects predicted by so-called ``Rabi model''.
+The performance of superconducting qubits has improved by several orders of magnitude in the past decade. Some of the most successful and prominent studies \cite{bishop2009} in this field are about circuit Quantum Electrodynamics (cQED) or so-called ``quantum optics on a chip''. In this work we've been trying to test if our sample was robust enough to reproduce quantitatively famous effects predicted by so-called ``Rabi model''.
 \end{multicols}
 \endgroup
 \end{tcolorbox}
@@ -95,14 +95,14 @@ The performance of superconducting qubits has improved by several orders of magn
                   title={\Large Flux qubit}, bottomtitle=.3cm, toptitle=.5cm
                   ]
 
-In the experiment we've carried out the Flux qubit was used. Firstly suggested in 1999, this qubit consists of a superconducting loop, interrupted three times with three Josephson junctions as depicted on \autoref{fig:qubit}~(a),~(b).\\
+In our experiment the Flux qubit was used. Firstly suggested in 1999, this qubit consists of a superconducting loop, interrupted with three Josephson junctions as depicted on \autoref{fig:qubit}~(a),~(b).\\
 
 \begin{minipage}{\textwidth}
 \centering
 \begin{tabular}{c@{\hspace{1.5cm}}c@{\hspace{1cm}}c}
-\includegraphics[valign=t, scale=0.25]{Pictures/qubit_photo} &
-\includegraphics[valign=t, scale=1.4]{Pictures/qubit_clean} &
-\includegraphics[valign=t, scale=0.55]{Pictures/qubit_3levels}\\
+\includegraphics[valign=m, scale=0.25]{Pictures/qubit_photo} &
+\includegraphics[valign=m, scale=1.4]{Pictures/qubit_clean} &
+\includegraphics[valign=m, scale=0.6]{Pictures/qubit_3levels}\\
 \parbox[bottom][2.5cm][t]{10cm}{\captionof{subfigure}{SEM micrograph of a three-junction Flux qubit}}\label{fig:qubit_a} &
 \parbox[bottom][2.5cm][t]{10cm}{\captionof{subfigure}{RCSJ model of Flux qubit}} &
 \parbox[bottom][2.5cm][t]{10cm}{\captionof{subfigure}{The three lowest energy bands}}\\
@@ -115,7 +115,7 @@ In the experiment we've carried out the Flux qubit was used. Firstly suggested i
 \label{fig:qubit}
 \end{minipage}
 
-RCSJ model of the Josephson junction and the quantization of flux allows to write down the Hamiltonian of the Flux qubit and solve it for eigenenergies and eigenstates. The first three of numerically calculated energy levels are presented on \autoref{fig:qubit}~(c). The difference $E_1 - E_0$ shows hyperbolic dependence on $\Phi$ (\autoref{fig:qubit_spectrum}).\\
+RCSJ model of the Josephson junction and the quantization of flux allows to write down the Hamiltonian of the Flux qubit and to solve it for eigenenergies and eigenstates. The first three of numerically calculated energy levels are presented on \autoref{fig:qubit}~(c). The difference $E_1 - E_0$ shows a hyperbolic dependence on $\Phi$ (\autoref{fig:qubit_spectrum}).\\
 
 \begin{minipage}{0.5\textwidth}
 \centering
@@ -124,12 +124,12 @@ RCSJ model of the Josephson junction and the quantization of flux allows to writ
 \label{fig:qubit_spectrum}
 \end{minipage}
 \begin{minipage}{0.5\textwidth}
-Using the form of the qubit potential and the tight-binding model it is possible to extract the reduced two-level Hamiltonian, which is valid in the vicinity of the degeneracy point:
+In the vicinity of the degeneracy point $\Phi = \Phi_0/2$ one can describe the qubit with a reduced two-level Hamiltonian:
 \begin{equation}
 \mathcal{\hat H} = \frac{\varepsilon}{2}\,\hat \sigma_z + \frac{\Delta}{2}\,\hat \sigma_x,
 \label{eq:red_ham}
 \end{equation}
-where $\varepsilon \propto \Phi-\Phi_0/2$ and $\Delta = const$ is responsible for the minimal splitting. From this we get the theoretical formula of the numerically obtained spectrum on \autoref{fig:qubit_spectrum}:
+where $\varepsilon \propto \Phi-\Phi_0/2$ and $\Delta = const$ is responsible for the minimal splitting. From this we get the theoretical formula for the numerically obtained spectrum on \autoref{fig:qubit_spectrum}:
 \begin{equation}
 \Delta E = \hbar \omega_q = \sqrt{\varepsilon^2+\delta^2}.
 %\label{eq:qub_spec}
@@ -147,7 +147,8 @@ where $\varepsilon \propto \Phi-\Phi_0/2$ and $\Delta = const$ is responsible fo
 \captionof{figure}{Seven qubit-resonator systems coupled to the transmission line}
 \end{minipage}
 \begin{minipage}{0.5\textwidth}
-In the experiment we used a chip with seven different $\lambda/4$ microwave resonators with different consequent resonance frequencies around 10.7 GHz, each with a Flux qubit at the end. They are capacitively coupled to the transmission line and are experimentally recognized by a significant drop of $S_{21}$ when the signal is on the resonance. The qubits are detectable by scanning through a range of currents in a superconducting coil surrounding the chip. All the data presented here corresponds to the 5\textsuperscript{th} resonator. 
+We used a chip with seven $\lambda/4$ microwave resonators with different
+consequent resonance frequencies around 10.7 GHz, each with a Flux qubit at the end. They were capacitively coupled to the transmission line and are experimentally recognized by a significant drop of $S_{21}$ when the signal is on the resonance. The qubits can be detected via scanning through a range of currents in a superconducting coil surrounding the chip. All the data presented here corresponds to the 5\textsuperscript{th} resonator. 
 \end{minipage}
 \end{tcolorbox}
 
@@ -158,7 +159,7 @@ In the experiment we used a chip with seven different $\lambda/4$ microwave reso
 \begingroup
 \setlength{\columnsep}{1cm}	
 \begin{multicols}{2}
-To obtain the qubit part of compound spectrum on \autoref{fig:Rabi_spec}~(a) the second tone driving can be added using a coupler or a fast bias coil. This method is conceptually close to the dispersive readout -- when the second tone is in resonance with qubit in induces damped Rabi oscillations in it thus reducing the steady-state transition amplitude for the first tone and thus the absorption. The experimental results are presented on \autoref{fig:two-tone}. As one can see, the linewidth of the spectrum is huge ($\approx$1 GHz), implying significant dissipation. 
+To obtain the qubit part of the compound spectrum on \autoref{fig:Rabi_spec}~(a) a second tone driving can be added using a coupler or a fast bias coil. This method is conceptually close to the dispersive readout. When the second tone is in resonance with the qubit it induces damped Rabi oscillations in it thus reducing the steady-state transition amplitude for the first tone. Consequently, the absorption is reduced. The experimental results are presented on \autoref{fig:two-tone}. As one can see, the linewidth of the spectrum is huge ($\approx$1 GHz), implying significant dissipation. 
 \end{multicols}
 \endgroup
 
@@ -185,15 +186,15 @@ To obtain the qubit part of compound spectrum on \autoref{fig:Rabi_spec}~(a) the
                   title={\Large Rabi model}, bottomtitle=.5cm, toptitle=.5cm
                   ]
                   
-The theoretical model describing the interaction of the qubit includes unitary dynamics governed by Rabi Hamiltonian, three channels of dissipation, microwave driving of resonator and taking the voltage drop proportional to $|\!\left< \hat a \right>\!|$ in the steady-state, where $\hat a$ is resonator destruction operator. The master equation to determine the latter follows:
+The theoretical model describing the interaction of the qubit includes unitary dynamics governed by Rabi Hamiltonian, three channels of dissipation, microwave driving of resonator. The voltage drop is taken to be proportional to $|\!\left< \hat a \right>\!|$ in the steady-state, where $\hat a$ is the resonator annihilation operator. The master equation to determine the latter follows:
 \begin{equation}
 \begin{gathered}
-\mathcal{\hat H}_R = \frac{\hbar \omega_q}{2} \hat \sigma_z  + \hbar \omega_r  \left(\frac{1}{2}+\hat a^\dag \hat a \right) + \hbar g (\hat a^\dag + \hat a) \otimes \left( \hat \sigma_x \cos\theta-  \hat\sigma_z \sin\theta \right) +
+\mathcal{\hat H}_R = \frac{\hbar \omega_q}{2} \hat \sigma_z  + \hbar \omega_r  \left(\frac{1}{2}+\hat a^\dag \hat a \right) + \hbar g (\hat a^\dag + \hat a) \otimes \left( \hat \sigma_x \sin\theta-  \hat\sigma_z \cos\theta \right) +
  \\
  + A\cos(\omega t) (\hat a^\dag + \hat a) + \kappa \mathcal{D}[\hat a] + \gamma \mathcal{D}[\hat \sigma^-] + \gamma_\phi \mathcal{D}[\hat \sigma_z],
 \end{gathered}
 \end{equation}
-where $\tan \theta = \frac{\Delta}{\varepsilon}$ and (1) and (2) were used to make right basis transformation. The spectrum including only $\omega_{01}$ and $\omega_{02}$ frequencies is shown on \autoref{fig:Rabi_spec}.\\
+where $\tan \theta = \frac{\Delta}{\varepsilon}$ and (1) and (2) were used to make a correct basis transformation. The spectrum one can obtain from this model including only $\omega_{01}$ and $\omega_{02}$ frequencies is shown on \autoref{fig:Rabi_spec}.\\
 
 \begin{minipage}{\textwidth}
 \centering
@@ -213,7 +214,7 @@ where $\tan \theta = \frac{\Delta}{\varepsilon}$ and (1) and (2) were used to ma
 
 \begin{minipage}{\textwidth}
 \begin{tabular}{l@{\hspace{1cm}}l}
-\parbox{0.5\textwidth}{It can be seen on \autoref{fig:Rabi_spec}~(a) that at the degeneracy point both the frequencies have stronger deviations from unperturbed spectrum than in the other areas of dispersive regime. That happens due to the effective dependence of coupling constant $g_{eff} = g\cos\theta$ on flux.}
+\parbox{0.5\textwidth}{It can be seen on \autoref{fig:Rabi_spec}~(a) that at the degeneracy point both frequencies have stronger deviations from unperturbed spectrum than in the other areas of dispersive regime. That happens due to the effective dependence of coupling constant $g_{eff} = g\sin\theta$ on flux bias.}
 &
 \parbox{0.45\textwidth}{\autoref{fig:Rabi_spec}~(b) shows how the system will react to driving with $A (\hat a^\dag + \hat a)\cos\omega t$. The part of the spectrum around $\omega_r$ will only be observed -- qubit flips are suppressed for this operator, so there is no absorption at the bare qubit frequency $\omega_q$.}\\
 \end{tabular}
@@ -229,7 +230,7 @@ where $\tan \theta = \frac{\Delta}{\varepsilon}$ and (1) and (2) were used to ma
 \begingroup
 \setlength{\columnsep}{1cm}	
 \begin{multicols}{2}
-The main idea of the study was to compare the prediction of model (3) with the experimentally obtained spectrum. On \autoref{fig:anticrossing_double} the two outcomes are shown, theoretical (a) and experimental (b). The fitting parameters were the coupling constant, flux-axis scale, unknown bare resonator frequency and of course three dissipation rates. Although it is one of the best possible fits, there are significant differences between plots in the upper branch.  
+The main idea of this study was to compare the prediction of model (3) with the experimentally obtained spectrum. On \autoref{fig:anticrossing_double} the two outcomes are shown, theoretical (a) and experimental (b). The fitting parameters were the coupling constant, flux-axis scale, unknown bare resonator frequency and three dissipation rates. Although it is one of the best possible fits, there are significant differences between plots in the upper branch.  
 \end{multicols}
 \endgroup
 
@@ -276,8 +277,7 @@ Another effect that was investigated was the ``vanishing of anticrossings''. Tha
                   title={\Large Conclusion}, bottomtitle=.5cm,toptitle=.5cm
                   ]
 
-The experiment we have conducted has shown that the our qubit-resonator system can't be described by Rabi model. This result must have its roots in the sample defects, which are nearly impossible to model. Nevertheless, qualitative effects are observable even with a bad qubit.
-
+The experiment we have conducted has shown that the our qubit-resonator system can't be described by Rabi model. This result probably has its roots in the sample defects, which are hard to model. Nevertheless, qualitative effects are observable even with a qubit of low quality.
 \end{tcolorbox}
 
 \end{multicols}
